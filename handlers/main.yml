@@ -1,0 +1,9 @@
+- name: restart webserver
+  service:
+    name: "{{ apache_service_name }}"
+    state: restarted
+
+- name: restart mysql
+  service:
+    name: "{{ mysql_service_name }}"
+    state: restarted
